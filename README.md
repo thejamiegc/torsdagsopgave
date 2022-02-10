@@ -1,0 +1,2 @@
+# torsdagsopgave
+opgave til datamatiker
