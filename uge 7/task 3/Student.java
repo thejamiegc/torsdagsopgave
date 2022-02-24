@@ -1,38 +1,34 @@
 // Create a Student class
 public class Student {
 
-	//declare variables as template
-	private String name; 
-	private int age; 
-	private boolean isFemale; 
-	private String datamatikerTeam; 
+	private String name;
+	private int age;
+	private boolean isFemale;
+	private String team;
 
-	//constructor
-	public Student(String tmpName, int tmpAge, boolean tmpIsFemale, String tmpDatamatikerTeam){
-		this.name = tmpName;
-		this.age = tmpAge;
-		this.isFemale = tmpIsFemale; 
-		this.datamatikerTeam = tmpDatamatikerTeam; 
+	public Student(String name,int age,boolean isFemale,String team){
+		this.name = name;
+		this.age = age;
+		this.isFemale = isFemale;
+		this.team = team;
 	}
 
-	public String getName() {
-		return this.name; 
+	public String getName(){
+		return this.name;
 	}
 
-	public int getAge() {
-		return this.age; 
+	public int getAge(){
+		return this.age;
 	}
 
-	public String getGender() {
-		if(this.isFemale) {
-			return "Woman";
-		} else {
-			return "Man";
+	public String getGender(){
+		if(this.isFemale){
+			return "Female";
 		}
+		return "Male";
 	}
-
-	public String getTeam() {
-		return this.datamatikerTeam;
+	
+	public String getTeam(){
+		return this.team;
 	}
-
 } 

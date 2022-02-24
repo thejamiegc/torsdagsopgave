@@ -1,31 +1,28 @@
 public class Teacher {
 
-	//declare variables as template
-	private String name; 
-	private int age; 
-	private boolean isFemale; 
 
-	//constructor
-	public Teacher(String tmpName, int tmpAge, boolean tmpIsFemale){
-		this.name = tmpName;
-		this.age = tmpAge;
-		this.isFemale = tmpIsFemale; 
+	private String name;
+	private int age;
+	private boolean isFemale;
+
+	public Teacher(String name,int age,boolean isFemale){
+		this.name = name;
+		this.age = age;
+		this.isFemale = isFemale;
 	}
 
-	public String getName() {
-		return this.name; 
+	public String getName(){
+		return this.name;
+	}
+	
+	public int getAge(){
+		return this.age;
 	}
 
-	public int getAge() {
-		return this.age; 
-	}
-
-	public String getGender() {
-		if(this.isFemale) {
-			return "Woman";
-		} else {
-			return "Man";
+	public String getGender(){
+		if(this.isFemale){
+			return "Female";
 		}
+		return "Male";
 	}
-
 }
