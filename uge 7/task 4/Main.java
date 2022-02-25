@@ -5,7 +5,7 @@ public class Main {
     	public static void main(String[] args) {
 		int[] intArray = new int []{4,2,3,1};
 		String[] strArray = new String[]{"Hej","med","dig","!"};
-		boolean[] bolArray = new boolean[]{true,false,false};
+		boolean[] bolArray = new boolean[]{true,false,false,true};
 
 		printArray(strArray);
 		System.out.println(getSum(intArray));

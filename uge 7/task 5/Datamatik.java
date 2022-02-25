@@ -11,7 +11,7 @@
 		studArr[5] = new Student("Zagarias",21,false,"fysik");
 		studArr[6] = new Student("Gudme",24,false,"fysik");
 		studArr[7] = new Student("Nicklas",21,false,"pas");
-		studArr[8] = new Student("Caspar",23,false,"Kemi");
+		studArr[8] = new Student("Caspar",23,false,"kemi");
 		studArr[9] = new Student("Jakob",23,false,"datalog");
 		nameSearch(studArr,0);
 		nameSearch(studArr,2);	
