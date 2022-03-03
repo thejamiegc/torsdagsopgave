@@ -13,7 +13,6 @@ public class Main {
         Scanner scan = new Scanner(data);
         Scanner scan2 = new Scanner(data);
         printLongestWord(scan);
-
         wordsWithLessThenTwoVocals(scan2);
     }
 
