@@ -8,14 +8,15 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-     File data = new File("src\\com\\company\\data.txt");
+     File data = new File("src/com/company/data.txt");
         try {
             Scanner scan = new Scanner(data);
             Scanner scan2 = new Scanner(data);
             printLongestWord(scan);
             wordsWithLessThenTwoVocals(scan2);
-        }catch (FileNotFoundException ikast){
-            ikast.getCause();
+        }catch (FileNotFoundException exception){
+            System.out.println("file not found");
+            exception.getCause();
         }
     }
 
