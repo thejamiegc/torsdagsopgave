@@ -1,21 +1,27 @@
 package com.company;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) throws Exception{
-        File data = new File("src\\com\\company\\data.txt");
-        Scanner scan = new Scanner(data);
-        String text="";
-        while (scan.hasNextLine()) {
-            text = text + scan.nextLine() + " ";
+    public static void main(String[] args){
+        File data = new File("src/com/company/data.txt");
+        try {
+            Scanner scan = new Scanner(data);
+            String text = "";
+            while (scan.hasNextLine()) {
+                text = text + scan.nextLine() + " ";
+            }
+            text = text.toLowerCase(Locale.ROOT);
+            printMostFrequentLetter(text);
+            printLeastFrequentLetter(text);
+        }catch (FileNotFoundException exception){
+            System.out.println("file not found");
+            exception.getCause();
         }
-        text = text.toLowerCase(Locale.ROOT);
-        printMostFrequentLetter(text);
-        printLeastFrequentLetter(text);
     }
 
     static void printMostFrequentLetter(String text){
