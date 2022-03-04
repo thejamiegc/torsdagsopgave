@@ -6,14 +6,17 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 	// write your code here
      File data = new File("src\\com\\company\\data.txt");
-
-        Scanner scan = new Scanner(data);
-        Scanner scan2 = new Scanner(data);
-        printLongestWord(scan);
-        wordsWithLessThenTwoVocals(scan2);
+        try {
+            Scanner scan = new Scanner(data);
+            Scanner scan2 = new Scanner(data);
+            printLongestWord(scan);
+            wordsWithLessThenTwoVocals(scan2);
+        }catch (FileNotFoundException ikast){
+            ikast.getCause();
+        }
     }
 
     static void printLongestWord(Scanner scan){
