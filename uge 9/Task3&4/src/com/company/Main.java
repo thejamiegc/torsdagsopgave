@@ -48,7 +48,7 @@ public class Main {
             }
         }
             System.out.println("Top 10 most used letters:");
-        for(int i=0;i<10;i++){
+        for(int i=0;i< 10;i++){
             System.out.println(charArr[i] + " shows up " + intArr[i] + " times!");
         }
     }
