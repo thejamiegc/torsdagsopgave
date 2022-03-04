@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 	// write your code here
-     File data = new File("C:\\Users\\jcall\\Desktop\\data.txt");
+     File data = new File("src\\com\\company\\data.txt");
 
         Scanner scan = new Scanner(data);
         Scanner scan2 = new Scanner(data);

@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws Exception{
-        File data = new File("C:\\Users\\jcall\\Desktop\\data.txt");
+        File data = new File("src\\com\\company\\data.txt");
         Scanner scan = new Scanner(data);
         String text="";
         while (scan.hasNextLine()) {
