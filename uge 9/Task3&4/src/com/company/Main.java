@@ -5,7 +5,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
-    static final int ASCII_SIZE = 256;
+
     public static void main(String[] args) throws Exception{
         File data = new File("C:\\Users\\jcall\\Desktop\\data.txt");
         Scanner scan = new Scanner(data);
@@ -15,14 +15,15 @@ public class Main {
         }
         text = text.toLowerCase(Locale.ROOT);
         printMostFrequentLetter(text);
-        printleastFrequentLetter(text);
+        printLeastFrequentLetter(text);
     }
 
     static void printMostFrequentLetter(String text){
         char[] charArr = new char[]{'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','æ','ø','å'};
         int[] intArr = new int[charArr.length];
+        int tempint;
+        char tempchar;
         int max=0;
-        int index=0;
         for(int i=0;i< charArr.length;i++){
            for(int j=0;j<text.length();j++){
                if(text.charAt(j)==charArr[i]){
@@ -32,16 +33,31 @@ public class Main {
            }
            if(intArr[i]>max){
                max=intArr[i];
-               index = i;
            }
         }
-            System.out.println("The most frequent letter is "+ charArr[index] + " it is used " + intArr[index]);
+        for(int i=0;i<intArr.length;i++){
+            for (int j=i;j< intArr.length;j++){
+                if(intArr[j]>intArr[i]){
+                    tempint = intArr[i];
+                    tempchar = charArr[i];
+                    intArr[i] = intArr[j];
+                    charArr[i] = charArr[j];
+                    intArr[j] = tempint;
+                    charArr[j] = tempchar;
+                }
+            }
+        }
+            System.out.println("Top 10 most used letters:");
+        for(int i=0;i<10;i++){
+            System.out.println(charArr[i] + " shows up " + intArr[i] + " times!");
+        }
     }
-    static void printleastFrequentLetter(String text){
+    static void printLeastFrequentLetter(String text){
         char[] charArr = new char[]{'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','æ','ø','å'};
         int[] intArr = new int[charArr.length];
         int min=Integer.MAX_VALUE;
-        int index=0;
+        int tempint;
+        char tempchar;
         for(int i=0;i< charArr.length;i++){
             for(int j=0;j<text.length();j++){
                 if(text.charAt(j)==charArr[i]){
@@ -50,10 +66,26 @@ public class Main {
             }
             if(intArr[i]<min){
                 min=intArr[i];
-                index = i;
+
             }
         }
-        System.out.println("The least frequent letter is "+ charArr[index] + " it is used " + intArr[index]);
+
+        for(int i=0;i<intArr.length;i++){
+            for (int j=i;j< intArr.length;j++){
+                if(intArr[j]<intArr[i]){
+                    tempint = intArr[i];
+                    tempchar = charArr[i];
+                    intArr[i] = intArr[j];
+                    charArr[i] = charArr[j];
+                    intArr[j] = tempint;
+                    charArr[j] = tempchar;
+                }
+            }
+        }
+        System.out.println("\nTop 10 least used letters:");
+        for(int i=0;i<10;i++){
+            System.out.println(charArr[i] + " shows up " + intArr[i] + " time(s)!");
+        }
     }
 }
 
