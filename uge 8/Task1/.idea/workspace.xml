@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee49345c-3a1d-4e5c-9eb5-e8b0830da43c" name="Changes" comment="" />
+    <list default="true" id="ee49345c-3a1d-4e5c-9eb5-e8b0830da43c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../task 1/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 1/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 1/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 1/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 1/out/production/task 1/com/company/Algorithms.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 1/out/production/task 1/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 1/src/com/company/Algorithms.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 1/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 1/task 1.iml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,6 +96,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
