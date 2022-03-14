@@ -22,10 +22,19 @@ public class Game {
         for (String s:data) {
             //System.out.println(s);
             String[] values = s.split(": ");
-            int balance = Integer.parseInt(values[1]);
+            int balance;
+            if (values.length > 1) {
+                balance = Integer.parseInt(values[1]);
+            }else {
+                balance = Integer.parseInt("30000");
+            }
             Player p1 = new Player(values[0],balance);
             players.add(p1);
         }
+    }
+
+    public String getPlayers(){
+        return this.players.toString();
     }
 
 }

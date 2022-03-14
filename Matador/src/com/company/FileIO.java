@@ -8,7 +8,7 @@ import java.io.FileNotFoundException;
 public class FileIO {
 
     public ArrayList<String> readGameData(){
-    File file = new File("src/com/company/-data.txt");
+    File file = new File("src/com/company/data.txt");
     ArrayList<String> data = new ArrayList<>();
         try {
         Scanner scan = new Scanner(file);

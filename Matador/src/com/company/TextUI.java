@@ -10,9 +10,12 @@ public class TextUI {
         String input = "";
         Scanner scan = new Scanner(System.in);
 
-        while (!input.equals("Q")){
+        while (data.size()<6){
             System.out.println(message);
             input = scan.nextLine();
+            if (input.equalsIgnoreCase("Q")){
+                break;
+            }
             data.add(input);
         }
         return data;
