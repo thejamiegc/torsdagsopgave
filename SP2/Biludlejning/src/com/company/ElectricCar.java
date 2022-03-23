@@ -1,0 +1,49 @@
+package com.company;
+
+public class ElectricCar extends ACar{
+
+    private int batterCapacity;
+    private int maxRange;
+
+    public ElectricCar(String registrationNumber,String make, String model, int numberOfDoors,int batterCapacity,int maxRange){
+        super(registrationNumber,make,model,numberOfDoors);
+        this.batterCapacity = batterCapacity;
+        this.maxRange = maxRange;
+    }
+
+    int getBatteryCapacityKWh(){
+        return batterCapacity;
+    }
+
+    int getMaxRangeKM(){
+        return maxRange;
+    }
+
+    int getWhPrKm(){
+        return (getBatteryCapacityKWh()*1000)/maxRange;
+    }
+
+    public int getRegistrationFee() {
+        int kmPrLitre = (int) (100/getWhPrKm()/91.25);
+        if(kmPrLitre<=50 && kmPrLitre>=20){
+            return 330;
+        }
+        if(kmPrLitre<=20 && kmPrLitre>=15){
+            return 1050;
+        }
+        if(kmPrLitre<=15 && kmPrLitre>=10){
+            return 2340;
+        }
+        if(kmPrLitre<=10 && kmPrLitre>=5){
+            return 5500;
+        }
+        if(kmPrLitre<5){
+            return 10470;
+        }
+        return 0;
+    }
+    public String toString(){
+        return "this is a electric car made by:" + make + " the model: " + model + " the registrationnumber: " + getRegistrationNumber() + " number of doors: " + numberOfDoors + " wh/km: " + getWhPrKm() +"\n";
+    }
+
+}
