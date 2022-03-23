@@ -36,6 +36,6 @@ public class DieselCar extends AFuelCar {
 
     }
     public String toString(){
-        return "this is a Diesel car made by:" + make + " the model: " + model + " the registrationnumber: " + getRegistrationNumber() + " number of doors: " + numberOfDoors + " KM/litre: " + kmPrLitre + " does it have a particle: " + particleFilter +"\n";
+        return "this is a Diesel car made by:" + make + " the model: " + model + " the registrationnumber: " + getRegistrationNumber() + " number of doors: " + numberOfDoors + " KM/litre: " + kmPrLitre + " does it have a particlefilter: " + particleFilter +"\n";
     }
 }

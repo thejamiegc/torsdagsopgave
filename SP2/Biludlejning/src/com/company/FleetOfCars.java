@@ -20,6 +20,6 @@ public class FleetOfCars {
 
     @Override
     public String toString(){
-        return null;
+        return "Fleet: " + fleet;
     }
 }

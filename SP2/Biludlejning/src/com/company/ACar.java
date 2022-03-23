@@ -28,5 +28,8 @@ public abstract class ACar implements Car{
         return this.numberOfDoors;
 
     }
-
+    @Override
+    public String toString(){
+        return "this is a car made by:" + make + " the model: " + model + " the registrationnumber: " + getRegistrationNumber() + " number of doors: " + numberOfDoors + "\n";
+    }
 }
