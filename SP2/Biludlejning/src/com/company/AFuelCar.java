@@ -11,4 +11,8 @@ public abstract class AFuelCar extends ACar {
     int getKmPrLitre(){
         return 0;
     }
+    @Override
+    public String toString(){
+        return super.toString() +"\nthis car is a " + getFuelType() + " car"+ "\nKM/litre: " + kmPrLitre;
+    }
 }

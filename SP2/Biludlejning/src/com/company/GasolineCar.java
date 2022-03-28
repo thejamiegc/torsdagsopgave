@@ -30,6 +30,6 @@ public class GasolineCar extends AFuelCar{
     }
     @Override
     public String toString(){
-        return "this is a gasoline car made by:" + make + " the model: " + model + " the registrationnumber: " + getRegistrationNumber() + " number of doors: " + numberOfDoors + " KM/litre: " + kmPrLitre +"\n";
+        return super.toString() + "\n";
     }
 }

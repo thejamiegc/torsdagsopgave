@@ -27,7 +27,7 @@ public class ElectricCar extends ACar{
     public int getRegistrationFee() {
 
         int kmPrLitre = 100/(getWhPrKm()/91);
-        System.out.println(kmPrLitre);
+        //System.out.println(kmPrLitre);
         if(kmPrLitre<=50 && kmPrLitre>=20){
             return 330;
         }
@@ -46,7 +46,7 @@ public class ElectricCar extends ACar{
         return 0;
     }
     public String toString(){
-        return "this is a electric car made by:" + make + " the model: " + model + " the registrationnumber: " + getRegistrationNumber() + " number of doors: " + numberOfDoors + " wh/km: " + getWhPrKm() +"\n";
+        return super.toString() +"\nthis car is an electric car"+ "\nwh/km: " + getWhPrKm() +"\n";
     }
 
 }
